@@ -245,6 +245,128 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="dingruiyang.pw/2017/03/12/Mac-OSX-下配置MongoDb时的坑/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Ding Ruiyang">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://vignette2.wikia.nocookie.net/fallout/images/b/b9/JES_FRPG.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Hexo" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/12/Mac-OSX-下配置MongoDb时的坑/" itemprop="url">
+                  Mac OSX 下配置MongoDb时的那些坑
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-12T10:58:49+08:00">
+                2017-03-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Mac-OSX-下配置MongoDb时的那些坑"><a href="#Mac-OSX-下配置MongoDb时的那些坑" class="headerlink" title="Mac OSX 下配置MongoDb时的那些坑"></a>Mac OSX 下配置MongoDb时的那些坑</h1><p>准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过<br> <code>brew services start mongodb</code><br>来启动MongoDb。但是，当我按照教程输入<code>mongod</code>时，却始终链接不上数据库<br>如下图所示<br><img src="http://p1.bpimg.com/4851/d684f0355b51bb9a.png" alt="屏幕快照 2017-03-12 上午11.03.07"><br>可见，是/data/db没有写入权限的问题<br>一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sudo，就可完美解决问题。<br>这个经历告诉我</p>
+<p><strong><em>官方说明未必靠谱！🐶</em></strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="dingruiyang.pw/2017/03/11/Python-Scrapy-爬取一亩三分地录取信息/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -538,7 +660,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
