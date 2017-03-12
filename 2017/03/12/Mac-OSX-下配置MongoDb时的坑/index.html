@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="Mac OSX 下配置MongoDb时的那些坑准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过 brew services start mongodb来启动MongoDb。但是，当我按照教程输入mongod时，却始终链接不上数据库如下图所示可见，是/data/db没有写入权限的问题一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sud">
+<meta name="description" content="Mac OSX 下配置MongoDb时的那些坑准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过brew services start mongodb来启动MongoDb。但是，当我按照教程输入mongod时，却始终链接不上数据库如下图所示可见，是/data/db没有写入权限的问题一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sudo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac OSX 下配置MongoDb时的那些坑">
 <meta property="og:url" content="dingruiyang.pw/2017/03/12/Mac-OSX-下配置MongoDb时的坑/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mac OSX 下配置MongoDb时的那些坑准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过 brew services start mongodb来启动MongoDb。但是，当我按照教程输入mongod时，却始终链接不上数据库如下图所示可见，是/data/db没有写入权限的问题一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sud">
+<meta property="og:description" content="Mac OSX 下配置MongoDb时的那些坑准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过brew services start mongodb来启动MongoDb。但是，当我按照教程输入mongod时，却始终链接不上数据库如下图所示可见，是/data/db没有写入权限的问题一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sudo">
 <meta property="og:image" content="http://p1.bpimg.com/4851/d684f0355b51bb9a.png">
-<meta property="og:updated_time" content="2017-03-12T04:54:19.000Z">
+<meta property="og:updated_time" content="2017-03-12T04:55:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac OSX 下配置MongoDb时的那些坑">
-<meta name="twitter:description" content="Mac OSX 下配置MongoDb时的那些坑准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过 brew services start mongodb来启动MongoDb。但是，当我按照教程输入mongod时，却始终链接不上数据库如下图所示可见，是/data/db没有写入权限的问题一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sud">
+<meta name="twitter:description" content="Mac OSX 下配置MongoDb时的那些坑准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过brew services start mongodb来启动MongoDb。但是，当我按照教程输入mongod时，却始终链接不上数据库如下图所示可见，是/data/db没有写入权限的问题一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sudo">
 <meta name="twitter:image" content="http://p1.bpimg.com/4851/d684f0355b51bb9a.png">
 
 
@@ -324,7 +324,7 @@
       
 
       
-        <h1 id="Mac-OSX-下配置MongoDb时的那些坑"><a href="#Mac-OSX-下配置MongoDb时的那些坑" class="headerlink" title="Mac OSX 下配置MongoDb时的那些坑"></a>Mac OSX 下配置MongoDb时的那些坑</h1><p>准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过<br> <code>brew services start mongodb</code><br>来启动MongoDb。但是，当我按照教程输入<code>mongod</code>时，却始终链接不上数据库<br>如下图所示<br><img src="http://p1.bpimg.com/4851/d684f0355b51bb9a.png" alt="屏幕快照 2017-03-12 上午11.03.07"><br>可见，是/data/db没有写入权限的问题<br>一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sudo，就可完美解决问题。<br>这个经历告诉我</p>
+        <h1 id="Mac-OSX-下配置MongoDb时的那些坑"><a href="#Mac-OSX-下配置MongoDb时的那些坑" class="headerlink" title="Mac OSX 下配置MongoDb时的那些坑"></a>Mac OSX 下配置MongoDb时的那些坑</h1><p>准备装个MongoDb来存储爬到的数据，结果发现虽说可以通过<br><code>brew services start mongodb</code><br>来启动MongoDb。但是，当我按照教程输入<code>mongod</code>时，却始终链接不上数据库<br>如下图所示<br><img src="http://p1.bpimg.com/4851/d684f0355b51bb9a.png" alt="屏幕快照 2017-03-12 上午11.03.07"><br>可见，是/data/db没有写入权限的问题<br>一开始，我用了各种更改权限的方法 ，都无济于事。之后通过查阅starkoverflow 发现，只要加sudo，就可完美解决问题。<br>这个经历告诉我</p>
 <p><strong><em>官方说明未必靠谱！🐶</em></strong></p>
 
       
