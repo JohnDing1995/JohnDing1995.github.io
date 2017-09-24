@@ -245,6 +245,134 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="dingruiyang.pw/2017/09/24/The-Function-Method-and-Interface-of-Golang/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Ding Ruiyang">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://vignette2.wikia.nocookie.net/fallout/images/b/b9/JES_FRPG.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Ruiyang的小窝">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Ruiyang的小窝" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/09/24/The-Function-Method-and-Interface-of-Golang/" itemprop="url">
+                  The Function, Method and Interface of Golang
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-24T10:52:52+08:00">
+                2017-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Golng-的函数方法与接口"><a href="#Golng-的函数方法与接口" class="headerlink" title="Golng 的函数方法与接口"></a>Golng 的函数方法与接口</h1><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>函数与C++相近,在此不再赘述<br>其格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">func 函数名(参数列表)(返回值列表)</div></pre></td></tr></table></figure></p>
+<p>注意，如果在返回值列表中显示定义了返回值变量，可以在函数中直接使用这些变量</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>方法是函数的一种，其作用可以理解为C++中类的成员函数，只不过在Go中。方法也可以与数据类型绑定<br>当在与内置数据类型绑定时，该数据类型必须起一个别名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">type myInt int //为int起别名为myInt</div><div class="line">func (i myInt) add (another Int) myInt &#123;</div><div class="line">    i = i + myInt(another)</div><div class="line">    return i</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>方法add参数为int型变量another，返回值为myInt型变量,(i myInt)中，myInt表示与myInt类型相关联，而i则是该类型的值在该方法中的标识符</p>
+<p>注意，对标识符i的赋值并不会改变原来的值，也就是说，当我们执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">i1 := myInt(1)</div><div class="line">i2 := i1.add(2)</div></pre></td></tr></table></figure></p>
+<p>之后，hi1并不会变成3，要改变i1，应改造add为指针方法，改接收者类型(i myInt)为(i *myInt)，此时在函数中使用i时，应该将其解引用</p>
+<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>接口定义了一组行为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">//在接口定义中，函数体省略</div><div class="line">type Phone interface &#123;</div><div class="line">    call()</div><div class="line">&#125;</div><div class="line">//接口的作用是为结构体添加一组方法</div><div class="line">type NokiaPhone struct &#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//为结构体/类实现这些方法，就相当于实现了这个接口</div><div class="line">func (nokiaPhone NokiaPhone) call() &#123;</div><div class="line">    fmt.Println(&quot;I am Nokia, I can call you!&quot;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">type IPhone struct &#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">func (iPhone IPhone) call() &#123;</div><div class="line">    fmt.Println(&quot;I am iPhone, I can call you!&quot;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">    var phone Phone</div><div class="line"></div><div class="line">    phone = new(NokiaPhone)</div><div class="line">    phone.call()</div><div class="line"></div><div class="line">    phone = new(IPhone)</div><div class="line">    phone.call()</div><div class="line"></div><div class="line">&#125;</div><div class="line">``` </div><div class="line">此外，一个接口也可以声明一个该接口类型的变量</div><div class="line">，但是它可以被赋予各种类型的值</div></pre></td></tr></table></figure></p>
+<p>var myPhone Phone = new(Iphone)<br>```</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="dingruiyang.pw/2017/08/01/对闭包的个人理解/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -932,7 +1060,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
