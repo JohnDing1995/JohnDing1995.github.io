@@ -245,6 +245,131 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="dingruiyang.pw/2018/01/22/简单理解一致性hash算法/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Ding Ruiyang">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://vignette2.wikia.nocookie.net/fallout/images/b/b9/JES_FRPG.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Ruiyang的小窝">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Ruiyang的小窝" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/01/22/简单理解一致性hash算法/" itemprop="url">
+                  简单理解一致性hash算法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-22T15:15:12+08:00">
+                2018-01-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#简单理解一致性hash算法<br>作用：负载均衡<br>一般的做法：<br>我们有key o， 进行hash，得到hash(o)， 放到机器编号hash(o)的服务器上<br>一致性哈希：<br>分别进行两次hash</p>
+<pre><code>1. 将服务器编号hash到环上，得到一个hash值hash(s)
+2. 将key也进行一次hash，也得到一个hash值hash(o)
+3. 对于每一个文件的key，我们把它的hash值在环上顺时针转动，遇到的第一个hash(s)就是他要保存到
+</code></pre><p>删除节点的情况    节点上的数据顺时针迁移到下一个节点<br>增加节点的情况    hash(key)在该节点前一个（逆时针）节点之间的数据映射到新增加的节点<br>虚拟节点的概念：<br>为了解决数据倾斜问题，也就是当hash分布不均匀时，数据集中在几个节点上<br>1台机器，在环上面计算出多个位置。HOW?<br>假设用机器的ip来hash，我可以在ip后面加上几个编号, ip_1, ip_2, ip_3, .. 把1台物理机器生个多个(一般为4个)虚拟机器的编号。<br>数据首先按照一致性哈希中的算法映射到虚拟节点上，虚拟节点再根据自己由哪个真实节点派生出来的。将数据放到服务器上去</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="dingruiyang.pw/2017/09/24/The-Function-Method-and-Interface-of-Golang/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1060,7 +1185,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1131,7 +1256,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
