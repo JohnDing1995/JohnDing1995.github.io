@@ -1,6 +1,5 @@
-= Ruiyang Ding
-[http://dingruiyang.pw/ Ruiyang Ding] 丁瑞洋
-([dry950526@gmail.com])
+= Ruiyang Ding 丁瑞洋
+
 
 Master Student in Computer Science and Technology
 
@@ -9,6 +8,10 @@ ShanghaiTech University (上海科技大学)
 199, Huangke Rd. Pudong New Area,
 
 Shanghai, China
+
+Email: dry950526 AT gmail DOT com
+
+[http://dingruiyang.pw/ Homepage]
 
 == Biography
 I'm currently a master student in computer science. I also work as a research assistant in Prof. [http://sist.shanghaitech.edu.cn/faculty/liuxp/ Xiaopei Liu]'s lab(UAV-CL Lab)
@@ -19,11 +22,14 @@ I'm interested in:
 - Concurrent computing
 - Distributed systems
 == Education
-- 2017-Present  
+    - 2017-Present
     M.Sc. in Computer Science and Technology, ShanghaiTech University 上海科技大学, Shanghai, China
-- 2013-2017  
+
+    - 2013-2017  
     B.Eng. in Automation (Honor Class,拔尖班), China University of Petroleum(East China) 中国石油大学（华东）, Qingdao, China
-== Past Projects
+
+
+== Projects
 === [https://github.com/JohnDing1995/Selecting-Master-Program-USA Master Application Helper]
 /A helper of applying master program abroad/
 - Developed an web crawler based on scrapy framework.
@@ -41,3 +47,4 @@ I'm interested in:
 - Used Deferred Acceptance Algorithm to match teachers and students.	
 
 === UAV Systems
+To be added ..
