@@ -1,0 +1,41 @@
+= Ruiyang Ding
+[http://dingruiyang.pw/ Ruiyang Ding]
+([dry950526@gmail.com])
+
+Master Student, Computer Science and Technology
+
+ShanghaiTech University (上海科技大学)
+
+199, Huangke Rd. Pudong New Area,
+
+Shanghai, China
+
+== Biography
+I'm currently a master student in computer science. I also work as an reserach assistant in prof. Xiaopei Liu's lab(UAV-CL Lab)
+
+I'm interested in:
+- Concurrent computing
+- Distributed systems
+== Education
+- 2017-Present  
+    M.Sc. in Computer Science and Technology, ShanghaiTech University, Shanghai, China
+- 2013-2017  
+    B.Eng. in Automation (Honor Class,拔尖班), China University of Petroleum(East China), Qingdao, China
+== Past Projects
+=== Master Application Helper
+/A helper of applying master program abroad/
+- Developed an web crawler with request and asyncio module to fetch admission case from 1point3acres.com asynchronously.
+-  Used MongoDB for data storage.
+- Used threading and Queue to solve the blocking problem between data crawling, parsing and writing.
+-  Developed an web app with Flask web framework and Bootstrap & JQuery libraries, which allowing users to querycrawed admission cases.
+
+=== Shanghaitech TSMatching
+/A platform for graduate admission/
+- Developed a graduate admission platform using Django framework
+- Developed a CAPTCHA generation system with JavaScript to prevent malicious registration
+- Used auth module to develop the user systems.
+- Used relational database to represent the selection model between teacher and student, use MySQL for implementation.
+- Developed web crawler to sync teacher’s information on ShanghaiTech’s website to generate user accounts automatically.
+- Used Deferred Acceptance Algorithm to match teachers and students.	
+
+### UAV Systems
