@@ -11,7 +11,9 @@ ShanghaiTech University (上海科技大学)
 Shanghai, China
 
 == Biography
-I'm currently a master student in computer science. I also work as an reserach assistant in prof. Xiaopei Liu's lab(UAV-CL Lab)
+I'm currently a master student in computer science. I also work as a research assistant in Prof. [http://sist.shanghaitech.edu.cn/faculty/liuxp/ Xiaopei Liu]'s lab(UAV-CL Lab)
+
+I'm also a admitted master student of Technische Universiteit Eindhoven(TU/e), 18 Fall, in Computer Science and Engineering
 
 I'm interested in:
 - Concurrent computing
@@ -22,14 +24,14 @@ I'm interested in:
 - 2013-2017  
     B.Eng. in Automation (Honor Class,拔尖班), China University of Petroleum(East China), Qingdao, China
 == Past Projects
-=== Master Application Helper
+=== [https://github.com/JohnDing1995/Master-Application-Helper Master Application Helper]
 /A helper of applying master program abroad/
-- Developed an web crawler with request and asyncio module to fetch admission case from 1point3acres.com asynchronously.
+- Developed an web crawler based on scrapy framework.
 -  Used MongoDB for data storage.
 - Used threading and Queue to solve the blocking problem between data crawling, parsing and writing.
--  Developed an web app with Flask web framework and Bootstrap & JQuery libraries, which allowing users to querycrawed admission cases.
+-  Developed a web app with Flask web framework and Bootstrap & JQuery libraries, which allowing users to query crawled admission cases.
 
-=== Shanghaitech TSMatching
+=== [https://github.com/JohnDing1995/shanghaiTechTSmatching Shanghaitech TSMatching]
 /A platform for graduate admission/
 - Developed a graduate admission platform using Django framework
 - Developed a CAPTCHA generation system with JavaScript to prevent malicious registration
