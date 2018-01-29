@@ -273,6 +273,11 @@ div.codeblock > div.blockcontent {
 	background: #f6f6f6;
 }
 
+div.col{
+	float:left;
+    padding:20px;
+}
+
 span.pycommand {
 	color: #000070;
 }
