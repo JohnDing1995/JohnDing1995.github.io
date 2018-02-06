@@ -17,12 +17,15 @@ Email: dry950526 AT gmail DOT com
 == Biography
 I'm currently a master student in computer science. I also work as a research assistant in Prof. [http://sist.shanghaitech.edu.cn/faculty/liuxp/ Xiaopei Liu]'s lab(UAV-CL Lab)
 
-（In Dutch）Ik ben ook een toegelaten masterstudent van Technische Universiteit Eindhoven, Nederland, de Computer Science and Engineering.
+I'm also an admitted master student(MS.c. Computer Science and Engineering) of [http://tue.nl Eindhoven University of Technology(TU/e)], The Netherlands, begin from Sep. 2018.
 
 I'm interested in:
 - Concurrent programming
 - Distributed systems
 == Education
+    - (From Sep. 2018)
+     M.Sc. in Computer Science and Engineering, Eindhoven University of Technology(Technische Universiteit Eindhoven), Eindhoven, The Netherlands
+
     - 2017-Present
     M.Sc. in Computer Science and Technology, ShanghaiTech University, Shanghai, China
 
@@ -33,19 +36,22 @@ I'm interested in:
 == Projects
 === [https://github.com/JohnDing1995/Selecting-Master-Program-USA Master Application Helper]
 /A helper of applying master program abroad/
-- Developed an web crawler based on scrapy framework.
--  Used MongoDB for data storage.
-- Used threading and Queue to solve the blocking problem between data crawling, parsing and writing.
--  Developed a web app with Flask web framework and Bootstrap & JQuery libraries, which allowing users to query crawled admission cases.
+- Develop an web crawler based on scrapy framework.
+- Use MongoDB for data storage.
+- Use threading and Queue to solve the blocking problem between data crawling, parsing and writing.
+- Develop a web app with Flask web framework and Bootstrap & JQuery libraries, which allowing users to query crawled admission cases.
 
 === [https://github.com/JohnDing1995/shanghaiTechTSmatching Shanghaitech TSMatching]
 /A platform for graduate admission/
-- Developed a graduate admission platform using Django framework
-- Developed a CAPTCHA generation system with JavaScript to prevent malicious registration
-- Used auth module to develop the user systems.
-- Used relational database to represent the selection model between teacher and student, use MySQL for implementation.
-- Developed web crawler to sync teacher’s information on ShanghaiTech’s website to generate user accounts automatically.
-- Used Deferred Acceptance Algorithm to match teachers and students.	
+- Develop a graduate admission platform using Django framework
+- Develop a CAPTCHA generation system to prevent malicious registration
+- Use auth module to develop the user systems.
+- Use relational database to represent the selection model between teacher and student, use MySQL for implementation.
+- Develop web crawler to sync teacher’s information on ShanghaiTech’s website to generate user accounts automatically.
+- Use Deferred Acceptance Algorithm to match teachers and students.	
 
 === UAV Systems
-To be added ..
+/As a member of UAV-CL lab/
+- Develop and maintenance onboard software system in DJI M600 UAV System, based on NVIDIA Jetson TX1.
+- Develop an uniform api interface for depth detection, point cloud acquisition and flight data recording, with ZED stereo camera.
+- Develop navigation algorithm verification system based on [https://github.com/Microsoft/AirSim Airsim], which provide support for UAV navigation algorithm research.
