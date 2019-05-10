@@ -1,0 +1,31 @@
+<!-- Wrapper -->
+<div id="wrapper" style="background-color:#4e516e">
+
+	<!-- Header -->
+	<header id="header" {% if page.layout == "landing" %} class="alt style2" {% endif %}{% if page.layout == "home" %}
+		class="alt" {% endif %}>
+		<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong>
+			<span>{{ site.subtitle }}</span></a>
+
+		<span style="text-transform: uppercase; font-family: Consolas, Courier New, Courier; 
+	                " id="typed"></span>
+		<nav>
+			{% for page in site.pages %}
+			{% if page.layout == "home" %}
+			<a href="{{ "" | absolute_url }}/">{{ page.title }}</a>
+			{% endif %}
+			{% endfor %}
+			{% for page in site.pages %}
+			{% if page.layout != "home" and page.nav-menu == true %}
+			<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+			{% endif %}
+			{% endfor %}
+
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<!-- <nav id="menu">
+			<a href="about">About Me</a>
+		
+	</nav>-->
