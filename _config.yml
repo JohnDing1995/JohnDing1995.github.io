@@ -5,7 +5,7 @@ email: dry950526@gmail.com
 job: Microservices and Backend Developer at A+ LMS, Aalto University.
 study: Master student in Cloud Computing and Services, double degree(Aalto University + TU Delft)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://dingruiyang.pw
+# url: https://dingruiyang.pw
 author: Ruiyang Ding 丁瑞洋
 street_address:
 city: Espoo
