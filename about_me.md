@@ -8,22 +8,36 @@ nav-menu: true
 <div id="main" class="alt">
 	<div class="inner">
 			<h3>Experiences</h3>
-			<p><strong>Aalto University</strong>
-			<br>Espoo, Finland
-<br>MSc in Cloud Computing and Services
-<br>2018.09 - Present</p>
+			<p><strong>Microservices and Backend Developer</strong>
+			<br>A+ Learning Management System/ Aalto University
+<br>Espoo Finland
+<br>2018.09 - Present
+<br>
+Develop Sheperd -- The continuous integration service for course material at A+, including:
+
+ - OAuth style login system with LTI protocol
+ - Course instance management system
+ - Distributed and scalable CI system for course material building.
+ - Docker image for Shepherd
+ 
+ Develop Roman -- The course build material tool for A+ LMS
+ - Kubernetes backend for course build containers.
+
+</p>
 			<p><strong>Research Assistant(Software Developer)</strong>
 			<br>ShanghaiTech University School of Information Science & Technology
 <br>2017.03-2018.07<br>
+
 - Develop an UAV simulation system with Microsoft Airsim, verify navigation algorithm under this simulator.<br>
 - Develop an UAV control system with DJI SDk, which provides uniform C++ API interface for api control and data collection with LiDAR, ZED stereo camera,etc. 
 </p>
 			<p><strong>Backend Developer</strong>
 			<br>ShanghaiTech University School of Creative Arts, Shanghai, China
 <br>2017.03-2018.07
-<br>- In the team of four, work as a back end developer.
-<br>- Develop online event registration & seat reservation platform "SCA MeetUp"(创艺·约) of School of Creative Arts, ShanghaiTech University.
-<br>- Develope server API interface with Django REST framework</p>
+
+- In the team of four, work as a back end developer.
+- Develop online event registration & seat reservation platform "SCA MeetUp"(创艺·约) of School of Creative Arts, ShanghaiTech University.
+- Develope server API interface with Django REST framework</p>
 </div>
 
 <div class="inner">
