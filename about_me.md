@@ -14,13 +14,13 @@ nav-menu: true
 <br>2018.09 - Present
 <br>
 Develop Sheperd -- The continuous integration service for course material at A+, including:
-
+<br>
  - OAuth style login system with LTI protocol
  - Course instance management system
  - Distributed and scalable CI system for course material building.
  - Docker image for Shepherd
  
- Develop Roman -- The course build material tool for A+ LMS
+ Develop Roman -- The course build material tool for A+ LMS<br>
  - Kubernetes backend for course build containers.
 
 </p>
@@ -33,7 +33,7 @@ Develop Sheperd -- The continuous integration service for course material at A+,
 </p>
 			<p><strong>Backend Developer</strong>
 			<br>ShanghaiTech University School of Creative Arts, Shanghai, China
-<br>2017.03-2018.07
+<br>2017.03-2018.07<br>
 
 - In the team of four, work as a back end developer.
 - Develop online event registration & seat reservation platform "SCA MeetUp"(创艺·约) of School of Creative Arts, ShanghaiTech University.
