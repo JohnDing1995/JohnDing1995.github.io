@@ -24,3 +24,16 @@
 			border-bottom: solid 1px _palette(border);
 		}
 	}
+
+	#content {
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+		margin-left: auto;
+		margin-top: 70px;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 85%;
+
+	}
