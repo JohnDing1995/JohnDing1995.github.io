@@ -1,6 +1,6 @@
 # site settings
 title: Ruiyang's Page
-subtitle: 
+subtitle:
 email: dry950526@gmail.com
 job: Microservices and Backend Developer at A+ LMS, Aalto University.
 study: Master student in Cloud Computing and Services, double degree(Aalto University + TU Delft)
@@ -8,11 +8,10 @@ url: https://dingruiyang.pw
 author: Ruiyang Ding 丁瑞洋
 street_address:
 city: Espoo
-state: 
-zip_code: 
+state:
+zip_code:
 country: Finland
 phone:
-
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -22,17 +21,16 @@ tiles-count: 6
 500px_url:
 facebook_url:
 github_url: https://github.com/JohnDing1995/
-gitlab_url: 
-googleplus_url: 
-instagram_url: 
-linkedin_url: 
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/dingry/
 pinterest_url:
 slack_url:
-twitter_url: 
+twitter_url:
 
 # build settings
 markdown: kramdown
-
 
 sass:
   style: compressed
