@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hi, my name is Ruiyang'
+landing-title: 'Hi, I'm Ruiyang'
 description: null
 image: null
 author: null
@@ -9,8 +9,7 @@ show_tile: false
 ---
 
 I’m master student from Aalto University/TU Delft, major in Cloud Computing and
-Services. From April 2019, I also work as a full-time microservice and backend developer at <a href='https://apluslms.github.io'>A+ LMS</a>.
-
+Services. From Feb. 2020, I join <a href='https://www.eficode.com/'>Eficode</a>. as a Junior DevOps Consultant. I'm also working on my master thesis at moment.
   <div id="typed-strings">
   <p>BACKEND DEVELOPMENT</p>
 <p>CLOUD COMPUTING</p>
