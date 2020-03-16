@@ -9,7 +9,7 @@ show_tile: false
 ---
 
 I’m master student from Aalto University/TU Delft, major in Cloud Computing and
-Services. From Feb. 2020, I join <a href='https://www.eficode.com/'>Eficode</a>. as a Junior DevOps Consultant. I'm also working on my master thesis at moment.
+Services. From Feb. 2020, I join <a href='https://www.eficode.com/'>Eficode</a> as a Junior DevOps Consultant. I'm also working on my master thesis at moment.
   <div id="typed-strings">
   <p>BACKEND DEVELOPMENT</p>
 <p>CLOUD COMPUTING</p>
