@@ -26,12 +26,11 @@ jobs:
             git config --local user.name "GitHub Action"
             git add thesis.pdf
             git commit -m "update thesis"
-            cd ../..
+            cd ..
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_ACTION_TOKEN}}
+          github_token: ${{ secrets.GITHUB_ACTION_TOKEN }}
           repository: JohnDing1995/JohnDing1995.github.io
           branch: test
-          directory: gh-page
           force: true
