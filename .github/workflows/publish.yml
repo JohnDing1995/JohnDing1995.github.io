@@ -7,7 +7,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Checkout github pages repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           repository: JohnDing1995/JohnDing1995.github.io
           path: gh-page
