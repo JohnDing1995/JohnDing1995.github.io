@@ -1,0 +1,55 @@
+I"3<!-- Contact -->
+
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<ul class="icons">
+			
+			
+			
+			
+			
+			
+			
+			
+			<li><a href="https://github.com/JohnDing1995/" class="icon alt fa-github" target="_blank"><span
+						class="label">GitHub</span></a></li>
+			
+			
+			
+			<li><a href="https://www.linkedin.com/in/dingry/" class="icon alt fa-linkedin" target="_blank"><span
+						class="label">LinkedIn</span></a></li>
+			
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Ruiyang's Page </li>
+
+
+		</ul>
+	</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
+<script src="http://localhost:4000/assets/js/skel.min.js"></script>
+<script src="http://localhost:4000/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="http://localhost:4000/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="http://localhost:4000/assets/js/main.js"></script>
+<script>
+	var typed = new Typed('#typed', {
+		strings: ['Python', 'SCALA', 'C++', 'Node.js', 'Docker', 'Google Cloud', 'Flask', 'Django', 'Spark'],
+		loop: true,
+		typeSpeed: 5,
+		backSpeed: 5,
+		// cursorChar: '_',
+		stringsElement: '#typed-strings'
+	});
+</script>:ET

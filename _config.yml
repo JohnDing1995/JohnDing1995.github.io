@@ -2,12 +2,11 @@
 title: Ruiyang's Page
 subtitle:
 email: dry950526@gmail.com
-job: Junior DevOps Consultant at Eficode, Finland.
-study: Master student in Cloud Computing and Services, double degree(Aalto University + TU Delft)
+job: DevOps Engineer
 url: https://ruiyang.rocks
 author: Ruiyang Ding 丁瑞洋
 street_address:
-city: Espoo
+city: Helsinki
 state:
 zip_code:
 country: Finland
@@ -34,3 +33,5 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+theme: minimal-mistakes-jekyll
